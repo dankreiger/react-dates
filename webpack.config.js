@@ -35,6 +35,14 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader',
+        include: path.join(__dirname, 'src'),
+        query: {
+          presets: ['airbnb']
+        }
+      },
+      {
         test: /\.js/,
         loader: 'babel-loader',
         include: path.join(__dirname, 'src'),
