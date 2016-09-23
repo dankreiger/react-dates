@@ -1,6 +1,6 @@
 import React from 'react';
 
-import DateRangePicker from '../src/components/DateRangePicker';
+import DateRangePicker from './DateRangePicker';
 
 class DateRangePickerWrapper extends React.Component {
   constructor(props) {
